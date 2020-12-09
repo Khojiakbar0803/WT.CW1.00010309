@@ -1,0 +1,1150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Texturina&display=swap");
+
+body {
+    margin            : 0;
+    padding           : 0;
+    -webkit-box-sizing: border-box;
+    box-sizing        : border-box;
+    font-family       : 'Poppins', sans-serif;
+    color             : #fff
+}
+
+.container {
+    display         : -webkit-box;
+    display         : -ms-flexbox;
+    display         : flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack   : center;
+    justify-content : center
+}
+
+.container header {
+    position             : fixed;
+    top                  : 0;
+    left                 : 0;
+    width                : 100px;
+    height               : 100vh;
+    background           : #151b29;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    -webkit-box-pack     : justify;
+    -ms-flex-pack        : justify;
+    justify-content      : space-between;
+    -webkit-box-align    : center;
+    -ms-flex-align       : center;
+    align-items          : center
+}
+
+.container header h1 {
+    color          : #fff;
+    text-decoration: underline;
+    font-size      : 50px;
+    font-family    : serif
+}
+
+.container header nav {
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    -webkit-box-pack     : justify;
+    -ms-flex-pack        : justify;
+    justify-content      : space-between;
+    -webkit-box-align    : center;
+    -ms-flex-align       : center;
+    align-items          : center;
+    margin-bottom        : 50px;
+    height               : 200px
+}
+
+.container header nav a img {
+    width         : 30px;
+    -webkit-filter: invert(0.5);
+    filter        : invert(0.5)
+}
+
+.container header nav a img:hover {
+    -webkit-filter: invert(1);
+    filter        : invert(1)
+}
+
+.container main {
+    margin-left: 100px;
+    background : #191f2d
+}
+
+.container main nav {
+    width           : 100%;
+    height          : 50px;
+    background-color: #0e1627
+}
+
+.container main nav .nav-links {
+    margin           : 0;
+    margin-left      : auto;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    height           : 50px;
+    width            : 1000px
+}
+
+.container main nav .nav-links .cursor {
+    position         : fixed;
+    width            : 20px;
+    height           : 20px;
+    background       : #fff;
+    border-radius    : 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+    pointer-events   : none;
+    display          : none;
+    mix-blend-mode   : difference;
+    z-index          : 9999999999999999999999999999999999999
+}
+
+.container main nav .nav-links li {
+    list-style       : none;
+    height           : 50px;
+    width            : 200px;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    border-right     : 1px solid #fff;
+    text-align       : center
+}
+
+.container main nav .nav-links li:hover {
+    background: #401eff
+}
+
+.container main nav .nav-links li:hover~.cursor {
+    -webkit-transform: scale(6);
+    transform        : scale(6)
+}
+
+.container main nav .nav-links li a {
+    text-decoration: none;
+    color          : #ccc
+}
+
+.container main .promo {
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    height           : 90vh;
+    width            : 100%
+}
+
+.container main .promo .cinema {
+    width                            : 80%;
+    height                           : 80%;
+    background                       : url(../img/jumanji.jpg);
+    background-size                  : cover;
+    background-position              : center;
+    background-repeat                : no-repeat;
+    border-radius                    : 10px;
+    -webkit-animation-name           : slider;
+    animation-name                   : slider;
+    -webkit-animation-duration       : 10s;
+    animation-duration               : 10s;
+    -webkit-animation-delay          : 5s;
+    animation-delay                  : 5s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function        : ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count        : infinite
+}
+
+.container main .promo .cinema .bg {
+    width                : 100%;
+    height               : 100%;
+    background           : rgba(0, 0, 0, 0.7);
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-pack     : center;
+    -ms-flex-pack        : center;
+    justify-content      : center;
+    -webkit-box-align    : center;
+    -ms-flex-align       : center;
+    align-items          : center;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    border-radius        : 10px
+}
+
+.container main .promo .cinema h1,
+.container main .promo .cinema p {
+    display   : block;
+    margin    : 0 auto;
+    text-align: center;
+    color     : #fff;
+    padding   : 10px
+}
+
+.container main .promo .cinema h1 {
+    font-size  : 60px;
+    font-family: 'Texturina', serif
+}
+
+.container main .promo .cinema p {
+    margin-top: 10px;
+    color     : #999999;
+    width     : 70%
+}
+
+.container main .require {
+    min-height: 100vh;
+    width     : 100%
+}
+
+.container main .require .title {
+    width                : 100%;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-pack     : center;
+    -ms-flex-pack        : center;
+    justify-content      : center;
+    -webkit-box-align    : center;
+    -ms-flex-align       : center;
+    align-items          : center;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column
+}
+
+.container main .require .title .main_title {
+    font-size  : 50px;
+    color      : #fff;
+    text-align : center;
+    font-weight: 400;
+    margin     : 0;
+    margin-top : 100px
+}
+
+.container main .require .title .sumis {
+    width           : 150px;
+    height          : 12px;
+    background-color: #fff;
+    margin          : 10px 0
+}
+
+.container main .require .title .sub_title {
+    font-size  : 20px;
+    color      : #999999;
+    text-align : center;
+    font-weight: 300
+}
+
+.container main .require .container {
+    width            : 80%;
+    margin           : 0 auto;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-pack : justify;
+    -ms-flex-pack    : justify;
+    justify-content  : space-between;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    -ms-flex-wrap    : wrap;
+    flex-wrap        : wrap;
+    margin-top       : 100px
+}
+
+.container main .require .container a {
+    margin         : 0 auto;
+    text-decoration: none;
+    color          : white
+}
+
+.container main .require .container a .card {
+    height        : 450px;
+    width         : 250px;
+    -webkit-filter: grayscale(50%);
+    filter        : grayscale(50%);
+    margin-bottom : 50px
+}
+
+.container main .require .container a .card:hover {
+    -webkit-filter: grayscale(0%);
+    filter        : grayscale(0%)
+}
+
+.container main .require .container a .card .img {
+    height       : 400px;
+    width        : 100%;
+    border-radius: 10px 10px 0 0
+}
+
+.container main .require .container a .card .descr {
+    height           : 50px;
+    width            : 100%;
+    background-color : #4f2ad2;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    border-radius    : 0 0 10px 10px
+}
+
+.container main footer {
+    width            : 100%;
+    height           : 300px;
+    background       : #0c003a;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -ms-flex-pack    : distribute;
+    justify-content  : space-around;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center
+}
+
+.container main footer .sci {
+    width            : 300px;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-pack : justify;
+    -ms-flex-pack    : justify;
+    justify-content  : space-between;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center
+}
+
+.container main footer .sci a {
+    padding         : 10px;
+    background-color: #2c2c2c;
+    border-radius   : 10px
+}
+
+.container main footer .sci a img {
+    width         : 30px;
+    -webkit-filter: invert(1);
+    filter        : invert(1)
+}
+
+.require .container a:nth-child(1) .card .img {
+    background         : url(../img/movies/LittleWomen.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.require .container a:nth-child(2) .card .img {
+    background         : url(../img/movies/ph1.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.require .container a:nth-child(3) .card .img {
+    background         : url(../img/movies/frozen.jpeg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.require .container a:nth-child(4) .card .img {
+    background         : url(../img/movies/ph2.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.require .container a:nth-child(5) .card .img {
+    background         : url(../img/movies/ph3.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.require .container a:nth-child(6) .card .img {
+    background         : url(../img/movies/ph4.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.require .container a:nth-child(7) .card .img {
+    background         : url(../img/movies/ph5.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.require .container a:nth-child(8) .card .img {
+    background         : url(../img/movies/ph6.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.require .container a:nth-child(9) .card .img {
+    background         : url(../img/movies/ava.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+footer .sci a:nth-child(1):hover {
+    background-color: #0177ee
+}
+
+footer .sci a:nth-child(2):hover {
+    background-color: #019b01
+}
+
+footer .sci a:nth-child(3):hover {
+    background-color: #61b0ff
+}
+
+footer .sci a:nth-child(4):hover {
+    background-color: #ff0d0d
+}
+
+@-webkit-keyframes slider {
+    0% {
+        background         : url(../img/jumanji.jpg);
+        background-size    : cover;
+        background-position: center;
+        background-repeat  : no-repeat
+    }
+
+    25% {
+        background         : url(../img/monster.jpg);
+        background-size    : cover;
+        background-position: center;
+        background-repeat  : no-repeat
+    }
+
+    50% {
+        background         : url(../img/civil.png);
+        background-size    : cover;
+        background-position: center;
+        background-repeat  : no-repeat
+    }
+
+    75% {
+        background         : url(../img/ono.jpg);
+        background-size    : cover;
+        background-position: center;
+        background-repeat  : no-repeat
+    }
+}
+
+@keyframes slider {
+    0% {
+        background         : url(../img/jumanji.jpg);
+        background-size    : cover;
+        background-position: center;
+        background-repeat  : no-repeat
+    }
+
+    25% {
+        background         : url(../img/monster.jpg);
+        background-size    : cover;
+        background-position: center;
+        background-repeat  : no-repeat
+    }
+
+    50% {
+        background         : url(../img/civil.png);
+        background-size    : cover;
+        background-position: center;
+        background-repeat  : no-repeat
+    }
+
+    75% {
+        background         : url(../img/ono.jpg);
+        background-size    : cover;
+        background-position: center;
+        background-repeat  : no-repeat
+    }
+}
+
+.container .contact_main .pro .tabtab {
+    height           : 70vh;
+    width            : 100%;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center
+}
+
+.container .contact_main .pro .tabtab .tabler {
+    width                : 70%;
+    display              : -ms-grid;
+    display              : grid;
+    -ms-grid-columns     : 1fr 1fr;
+    grid-template-columns: 1fr 1fr
+}
+
+.container .contact_main .pro .tabtab .tabler div {
+    background-color: #303c57
+}
+
+.container .contact_main .pro .tabtab .tabler div div {
+    border           : 2px solid #151b29;
+    padding          : 10px;
+    text-align       : center;
+    height           : 50px;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center
+}
+
+.container .genre_main {
+    width: 100%
+}
+
+.container .genre_main .back1 {
+    height    : 60vh;
+    width     : 100%;
+    background: url("../img/comedia.jpg") center center/cover no-repeat
+}
+
+.container .genre_main .require {
+    -webkit-box-shadow: 1px 0 1000px 100px #fff;
+    box-shadow        : 1px 0 1000px 100px #fff
+}
+
+.container .genre_main .require .container a:nth-child(1) .card .img {
+    background         : url(../img/movies/muppets.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .genre_main .require .container a:nth-child(2) .card .img {
+    background         : url(../img/movies/instantfamily.webp);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .genre_main .require .container a:nth-child(3) .card .img {
+    background         : url(../img/movies/gamenight.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .horror_main {
+    width: 100%
+}
+
+.container .horror_main .back1 {
+    height    : 60vh;
+    width     : 100%;
+    background: url("../img/horror.jpg") center center/cover no-repeat
+}
+
+.container .horror_main .require {
+    -webkit-box-shadow: 1px 0 1000px 100px #fff;
+    box-shadow        : 1px 0 1000px 100px #fff
+}
+
+.container .horror_main .require .container a:nth-child(1) .card .img {
+    background         : url(../img/movies/ono2.jpeg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .horror_main .require .container a:nth-child(2) .card .img {
+    background         : url(../img/movies/jason.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .horror_main .require .container a:nth-child(3) .card .img {
+    background         : url(../img/movies/us.png);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .drama_main {
+    width: 100%
+}
+
+.container .drama_main .back1 {
+    height    : 60vh;
+    width     : 100%;
+    background: url("../img/drama.jpg") center center/cover no-repeat
+}
+
+.container .drama_main .require {
+    -webkit-box-shadow: 1px 0 1000px 100px #fff;
+    box-shadow        : 1px 0 1000px 100px #fff
+}
+
+.container .drama_main .require .container a:nth-child(1) .card .img {
+    background         : url(../img/movies/LittleWomen.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .drama_main .require .container a:nth-child(2) .card .img {
+    background         : url(../img/movies/ph3.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .drama_main .require .container a:nth-child(3) .card .img {
+    background         : url(../img/movies/ph6.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .adven_main {
+    width: 100%
+}
+
+.container .adven_main .back1 {
+    height    : 60vh;
+    width     : 100%;
+    background: url("../img/adventure.webp") center center/cover no-repeat
+}
+
+.container .adven_main .require {
+    -webkit-box-shadow: 1px 0 1000px 100px #fff;
+    box-shadow        : 1px 0 1000px 100px #fff
+}
+
+.container .adven_main .require .container a:nth-child(1) .card .img {
+    background         : url(../img/movies/frozen.jpeg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .adven_main .require .container a:nth-child(2) .card .img {
+    background         : url(../img/movies/ph4.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .adven_main .require .container a:nth-child(3) .card .img {
+    background         : url(../img/movies/ava.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .fan_main {
+    width: 100%
+}
+
+.container .fan_main .back1 {
+    height    : 60vh;
+    width     : 100%;
+    background: url("../img/fan.jpg") center center/cover no-repeat
+}
+
+.container .fan_main .require {
+    -webkit-box-shadow: 1px 0 1000px 100px #fff;
+    box-shadow        : 1px 0 1000px 100px #fff
+}
+
+.container .fan_main .require .container a:nth-child(1) .card .img {
+    background         : url(../img/movies/ph1.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .fan_main .require .container a:nth-child(2) .card .img {
+    background         : url(../img/movies/ph2.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .fan_main .require .container a:nth-child(3) .card .img {
+    background         : url(../img/movies/ph5.jpg);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center
+}
+
+.container .film_main .sony {
+    padding              : 100px 20px;
+    display              : -ms-grid;
+    display              : grid;
+    -ms-grid-columns     : 1fr 1fr;
+    grid-template-columns: 1fr 1fr
+}
+
+.container .film_main .sony .box1 {
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-pack     : center;
+    -ms-flex-pack        : center;
+    justify-content      : center;
+    -webkit-box-align    : center;
+    -ms-flex-align       : center;
+    align-items          : center;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    padding              : 20px
+}
+
+.container .film_main .sony .box1 iframe {
+    width        : 100%;
+    height       : 290px;
+    border-radius: 10px
+}
+
+.container .film_main .sony .box1 .btn {
+    margin-top: 30px;
+    width     : 100%
+}
+
+.container .film_main .sony .box1 .btn a {
+    display          : block;
+    width            : 100%;
+    height           : 80px;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    background-color : #401eff;
+    color            : #000;
+    border-radius    : 10px;
+    text-decoration  : none;
+    font-size        : 20px
+}
+
+.container .film_main .sony .box1 .btn a:hover {
+    background-color: #ff1e1e;
+    color           : #eee
+}
+
+.container .film_main .sony .box2 {
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    padding          : 20px;
+    background       : #141414;
+    border-radius    : 10px
+}
+
+.container .contact_main {
+    width: 100%
+}
+
+.container .contact_main .pro .title {
+    width                : 100%;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-pack     : center;
+    -ms-flex-pack        : center;
+    justify-content      : center;
+    -webkit-box-align    : center;
+    -ms-flex-align       : center;
+    align-items          : center;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column
+}
+
+.container .contact_main .pro .title .main_title {
+    font-size  : 50px;
+    color      : #fff;
+    text-align : center;
+    font-weight: 400;
+    margin     : 0;
+    margin-top : 100px
+}
+
+.container .contact_main .pro .title .sumis {
+    width           : 150px;
+    height          : 12px;
+    background-color: #fff;
+    margin          : 10px 0
+}
+
+.container .contact_main .pro .title .sub_title {
+    font-size  : 20px;
+    color      : #999999;
+    text-align : center;
+    font-weight: 300
+}
+
+.container .contact_main .error {
+    display          : none;
+    width            : 60%;
+    background-color : #151b29;
+    border-radius    : 10px;
+    min-height       : 50px;
+    margin           : 20px auto;
+    margin-top       : 100px;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    padding          : 10px
+}
+
+.container .contact_main .my_form {
+    padding              : 20px;
+    display              : -ms-grid;
+    display              : grid;
+    -ms-grid-columns     : 1fr;
+    grid-template-columns: 1fr;
+    margin               : 20px auto;
+    margin-top           : 50px;
+    height               : 500px;
+    width                : 60%;
+    background-color     : #151b29;
+    border-radius        : 10px
+}
+
+.container .contact_main .my_form .change {
+    display              : -ms-grid;
+    display              : grid;
+    -ms-grid-columns     : 1fr;
+    grid-template-columns: 1fr
+}
+
+.container .contact_main .my_form .change .name {
+    display         : -webkit-box;
+    display         : -ms-flexbox;
+    display         : flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack   : space-evenly;
+    justify-content : space-evenly
+}
+
+.container .contact_main .my_form .change .name input {
+    width           : 40%;
+    height          : 50px;
+    background-color: #191f2d;
+    border          : none;
+    outline         : none;
+    border-radius   : 30px;
+    padding         : 0 15px;
+    color           : #fff
+}
+
+.container .contact_main .my_form .change .message {
+    display         : block;
+    margin          : 0 auto;
+    width           : 90%;
+    background-color: #191f2d;
+    border          : none;
+    outline         : none;
+    border-radius   : 30px 30px 0 30px;
+    padding         : 20px;
+    color           : #fff
+}
+
+.container .contact_main .my_form .btn {
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center
+}
+
+.container .contact_main .my_form .btn input {
+    height           : 50px;
+    width            : 50%;
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-pack : center;
+    -ms-flex-pack    : center;
+    justify-content  : center;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    background-color : #0f131b;
+    border           : none;
+    outline          : none;
+    color            : white;
+    border-radius    : 30px
+}
+
+@media screen and (max-width: 1150px) {
+    .container main nav {
+        z-index : 1000000000000;
+        position: fixed
+    }
+
+    .container main nav .burger {
+        z-index : 10000000000000;
+        position: fixed;
+        top     : 2%;
+        right   : 5%
+    }
+
+    .container main nav .burger .line {
+        width           : 30px;
+        height          : 3px;
+        margin          : 5px;
+        background-color: aliceblue
+    }
+
+    .container main nav .nav-links {
+        width                : 100%;
+        height               : 100vh;
+        background-color     : #39477e;
+        -webkit-box-orient   : vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
+        padding              : 0;
+        -webkit-clip-path    : circle(100px at 100% -30%);
+        clip-path            : circle(100px at 100% -30%);
+        -webkit-transition   : all .5s ease-in;
+        transition           : all .5s ease-in
+    }
+
+    .container main nav .nav-links li {
+        margin-right: 100px;
+        border      : none;
+        width       : 100%;
+        display     : -webkit-box;
+        display     : -ms-flexbox;
+        display     : flex
+    }
+
+    .container main nav .nav-links li:hover {
+        background: none
+    }
+
+    .container main nav .nav-links li a {
+        display   : block;
+        margin    : 0 auto;
+        text-align: center
+    }
+
+    .container main nav .nav-links.open {
+        -webkit-clip-path: circle(1300px at 90% -10%);
+        clip-path        : circle(1300px at 90% -10%)
+    }
+
+    .container main nav .nav-links.open .cursor {
+        display: block
+    }
+
+    .container .promo .cinema {
+        margin-top: 50px
+    }
+}
+
+@media (max-width: 725px) {
+    body .container main .promo .cinema h1 {
+        font-size: 35px
+    }
+
+    body .container main .promo .cinema p {
+        font-size: 12px
+    }
+
+    body .container main .require .title .main_title {
+        font-size: 30px
+    }
+
+    body .container main .require .title .sumis {
+        height: 5px
+    }
+
+    body .container main .require .title .sub_title {
+        font-size: 12px;
+        display  : block;
+        width    : 60%
+    }
+
+    body .container main footer {
+        -webkit-box-orient   : vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
+        height               : 300px
+    }
+
+    body .container main footer .idi p {
+        text-align: center
+    }
+}
+
+@media (max-width: 725px) {
+    body .container .contact_main .pro .title .main_title {
+        font-size: 30px
+    }
+
+    body .container .contact_main .pro .title .sumis {
+        height: 5px
+    }
+
+    body .container .contact_main .pro .title .sub_title {
+        font-size: 12px;
+        display  : block;
+        width    : 60%
+    }
+
+    body .container .contact_main .my_form {
+        padding: 10px;
+        height : 400px
+    }
+
+    body .container .contact_main .my_form .change .name {
+        -webkit-box-orient   : vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
+        -webkit-box-align    : center;
+        -ms-flex-align       : center;
+        align-items          : center
+    }
+
+    body .container .contact_main .my_form .change .name input {
+        width: 75%
+    }
+
+    body .container .contact_main .my_form .change .message {
+        width : 75%;
+        height: 100px
+    }
+}
+
+@media (max-width: 950px) {
+    .container .film_main .sony {
+        -ms-grid-columns     : 1fr;
+        grid-template-columns: 1fr
+    }
+}
+
+@media (max-width: 420px) {
+    body .container header {
+        display: none
+    }
+
+    body .container main {
+        margin: 0
+    }
+
+    body .container main nav .nav-links li {
+        margin-right: 0
+    }
+
+    body .container main .promo .cinema h1 {
+        font-size: 20px
+    }
+
+    body .container main .require .container a {
+        -webkit-transform: scale(0.7);
+        transform        : scale(0.7)
+    }
+
+    body .container main footer {
+        -webkit-box-orient   : vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
+        -webkit-box-align    : center;
+        -ms-flex-align       : center;
+        align-items          : center;
+        height               : 400px
+    }
+
+    body .container main footer .sci {
+        display              : block;
+        margin               : 0;
+        width                : 110px;
+        display              : -ms-grid;
+        display              : grid;
+        -ms-grid-columns     : 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap             : 10px
+    }
+
+    body .container main footer .idi p {
+        font-size: 12px
+    }
+}
+
+/*# sourceMappingURL=style.min.css.map */
